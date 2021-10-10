@@ -1,16 +1,11 @@
-# strapi_flutter_internation_poc
+# Strapi助力Flutter开发国际化App
 
-A new Flutter project.
+绝大多数的国际化APP是通过api请求返回不同的语言来实现的。 所谓“内容”指的并不是APP的UI界面，而是APP所承载的内容信息。
 
-## Getting Started
+我在这里提供了一个不同的思路，核心思想就是把原本在云端API多语言查询的部分利用Sqlite嵌入到App内部去实现。原因有三：
 
-This project is a starting point for a Flutter application.
+第一、针对特定内容，信息有边界的数据，把数据从云端嵌入到本地会得到更快的响应速度。
 
-A few resources to get you started if this is your first Flutter project:
+第二、多语言APP的用户是各个国家地区的人员，网络情况复杂，把数据从云端嵌入到本地不受网络影响可以离线使用。
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+第三、我没有云端的服务器 😂

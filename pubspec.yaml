@@ -8,16 +8,21 @@ environment:
 dependencies: 
   cupertino_icons: ^1.0.2
   get: 4.3.8
+  floor: ^1.2.0
+  get_storage: 2.0.3
   flutter: 
     sdk: flutter
 
 dev_dependencies: 
   flutter_lints: ^1.0.0
+  floor_generator: ^1.2.0
+  build_runner: ^2.1.2
   flutter_test: 
     sdk: flutter
 
 flutter: 
   assets: 
     - assets/db/
+    - strapi/public/uploads/
   uses-material-design: true
 

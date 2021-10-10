@@ -1,0 +1,10 @@
+{
+  "app": {
+    "name": "蔬果"
+  },
+  "locale": {
+    "title": "语言",
+    "zh": "中文",
+    "en": "English"
+  }
+}

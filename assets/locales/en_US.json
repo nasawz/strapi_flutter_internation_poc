@@ -1,0 +1,10 @@
+{
+  "app": {
+    "name": "VAF"
+  },
+  "locale": {
+    "title": "Language",
+    "zh": "中文",
+    "en": "English"
+  }
+}

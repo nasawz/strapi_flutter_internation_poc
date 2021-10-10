@@ -1,9 +1,11 @@
 import 'package:get/get.dart';
+import 'package:strapi_flutter_internation_poc/app/common/services/db_service.dart';
+import 'package:strapi_flutter_internation_poc/app/common/services/language_service.dart';
+import 'package:strapi_flutter_internation_poc/app/data/entity/vegetable.dart';
 
 class HomeController extends GetxController {
-  //TODO: Implement HomeController
+  final vegetables = Rx<List<VegetableV>>([]);
 
-  final count = 0.obs;
   @override
   void onInit() {
     super.onInit();
@@ -14,7 +16,12 @@ class HomeController extends GetxController {
     super.onReady();
   }
 
+  Future<void> getAllVegetables() async {
+    final result = await DbService.to.db.vegetableDao
+        .findAll(LanguageService.to.localeKey);
+    vegetables.value = result;
+  }
+
   @override
   void onClose() {}
-  void increment() => count.value++;
 }
