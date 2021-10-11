@@ -1,11 +1,11 @@
-# Strapi助力Flutter开发国际化App
+# Offline Internationalization App Poc
 
-绝大多数的国际化APP是通过api请求返回不同的语言来实现的。 所谓“内容”指的并不是APP的UI界面，而是APP所承载的内容信息。
+The vast majority of internationalized apps are implemented by returning different languages through api requests. The so-called "content" does not refer to the UI interface of the APP, but the content information carried by the APP.
 
-我在这里提供了一个不同的思路，核心思想就是把原本在云端API多语言查询的部分利用Sqlite嵌入到App内部去实现。原因有三：
+I have provided a different idea here. The core idea is to embed the part of the cloud API multilingual query that was originally in the cloud into the App by using Sqlite. There are three reasons:
 
-第一、针对特定内容，信息有边界的数据，把数据从云端嵌入到本地会得到更快的响应速度。
+- First, for specific content and data with information boundaries, embedding the data from the cloud to the local will get a faster response speed.
 
-第二、多语言APP的用户是各个国家地区的人员，网络情况复杂，把数据从云端嵌入到本地不受网络影响可以离线使用。
+- Second, the users of the multilingual APP are people from various countries and regions. The network situation is complicated. The data can be embedded from the cloud to the local without being affected by the network and can be used offline.
 
-第三、我没有云端的服务器 😂
+- Third, I don’t have a cloud server 😂.
